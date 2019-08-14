@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>gshift_wpo</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>GNU Lesser General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>gShift seo app</summary>
+    <description>gShift seo app</description>
+    <notes>gshift</notes>
+    <authors><author><name>gshift</name><user>gshift</user><email>ilia.smyshlaev@gshiftlabs.com</email></author></authors>
+    <date>2014-07-09</date>
+    <time>09:22:48</time>
+    <contents><target name="magecommunity"><dir name="Gs"><dir name="Gshift"><dir name="Block"><dir name="Adminhtml"><file name="Gshiftbackend.php" hash="919199aa44136ee9ca81adb4f408faa1"/></dir></dir><dir name="Helper"><file name="Data.php" hash="a8e7d73995fa7b85b0fec6c616219c34"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="GshiftbackendController.php" hash="7016dabc36e43a6d191b93ff4bc4cdce"/></dir></dir><dir name="etc"><file name="config.xml" hash="afc189a14b37c44dc60f13fd18b1419a"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="gshift.xml" hash="f469bac7ea54535597634c1be548553f"/></dir><dir name="template"><dir name="gshift"><file name="gshiftbackend.phtml" hash="f528a865a1bb9622393acca25c6b6f57"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Gs_Gshift.xml" hash="d178ce6435c3659bfc60555144372f20"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.13</min><max>6.0.0</max></php></required></dependencies>
+</package>

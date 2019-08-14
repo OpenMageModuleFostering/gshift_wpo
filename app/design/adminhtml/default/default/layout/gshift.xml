@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <gshift_adminhtml_gshiftbackend_index>
+	<reference name="content">
+	  <block type="gshift/adminhtml_gshiftbackend" name="gshiftbackend" template="gshift/gshiftbackend.phtml"/>
+	</reference>
+  </gshift_adminhtml_gshiftbackend_index>
+</layout>

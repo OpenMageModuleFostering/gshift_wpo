@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Gs_Gshift>
+      <version>0.1.0</version>
+    </Gs_Gshift>
+  </modules>
+  <global>
+    <helpers>
+      <gshift>
+        <class>Gs_Gshift_Helper</class>
+      </gshift>
+    </helpers>
+	<blocks>
+	  <gshift>
+		<class>Gs_Gshift_Block</class>
+	  </gshift>
+	</blocks>
+  </global>
+  <admin>
+	<routers>
+	  <gshift>
+	    <use>admin</use>
+		<args>
+		  <module>Gs_Gshift</module>
+		  <frontName>gshift</frontName>
+		</args>
+	  </gshift>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <gshift module="gshift">
+		<title>Gshift</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <gshiftbackend module="gshift">
+			<title>gshift</title>
+			<sort_order>0</sort_order>
+			<action>gshift/adminhtml_gshiftbackend</action>
+		  </gshiftbackend>
+		</children>
+	  </gshift>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<gshift translate="title" module="gshift">
+			  <title>Gshift</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <gshiftbackend translate="title">
+			<title>gshift</title>
+		  </gshiftbackend>
+			  </children>
+			</gshift>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<gshift>
+		  <file>gshift.xml</file>
+		</gshift>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 

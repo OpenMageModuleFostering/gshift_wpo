@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/gshift_wpo",
+    "name": "OpenMageModuleFostering\/gshift_wpo",
     "type": "magento-module",
     "license": "GNU-Lesser-General-Public-License",
     "homepage": "",
     "description": "gShift seo app",
     "authors": [
-    {
-        "name": "gshift",
-        "email": "ilia.smyshlaev@gshiftlabs.com"
-    }
-],
+        {
+            "name": "gshift",
+            "email": "ilia.smyshlaev@gshiftlabs.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
